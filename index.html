@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="web">
+    <div class="navbar">
+        <div class="logo">facebook</div>
+        <div class="login-form">
+            <input type="text" placeholder="Email or Phone">
+            <input type="password" placeholder="Password">
+            <button>Log In</button>
+            <a href="#">Forgotten password?</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-section">
+            <h2>Facebook helps you connect and share with the people in your life.</h2>
+            <img src="Network-PNG-Cutout.png" alt="Netowrk Image">
+        </div>
+
+        <div class="right-section">
+            <h2>Create an account</h2>
+            <p>It's free and always will be.</p>
+            <form>
+                <div class="name-section">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <input type="text" placeholder="Mobile number or email address" required><br>
+                <input type="password" placeholder="New Password" required><br>
+                
+                <div class="dob">
+                    <label for="birthday">Birthday</label>
+                    <div class="dob-selects">
+                        <select id="day" name="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option> 
+                            
+                        </select>
+                        <select id="month" name="month">
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            
+                        </select>
+                        <select id="year" name="year">
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option> 
+                        </select>
+                        <a href="#" class="dob-help">Why do I need to provide my birthday?</a>
+                    </div>
+                    
+                </div>
+                
+                <div class="gender">
+                    <input type="radio" name="gender" value="Male"> Male
+                    <input type="radio" name="gender" value="Female"> Female
+                </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum beatae deserunt blanditiis corrupti quasi dignissimos sunt expedita cumque cupiditate nam! Deleniti architecto vitae odio magni quaerat quasi eligendi accusamus impedit?</p>
+                <button type="submit">Create an account</button>
+            </form>
+            <a href="#">Create a Page</a><td><p>for a celebrity, band or business</p></td>
+        </div>
+    </div>
+</div>
+    <div class="login-container">
+        <img src="Screenshot 2024-08-24 204118.png" alt="Facebook Logo">
+        <form action="#">
+            <input type="text" name="email" placeholder="Phone or email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" class="login-btn">Log In</button>
+        </form>
+        <a href="#" class="forgot-password">Forgot Password?</a>
+        <a href="#" class="create-account">Create New Facebook Account</a>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .login-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar input[type="text"], 
+        .navbar input[type="password"] {
+            padding: 5px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        .navbar button {
+            background-color: #4267b2;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .navbar a {
+            color: #dfe3ee;
+            text-decoration: none;
+            margin-left: 10px;
+            font-size: 12px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 153px;
+        }
+
+        .left-section {
+            flex: 1;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .left-section h2 {
+            font-size: 18px;
+            color: #1d2129;
+        }
+
+        .left-section img {
+            width: 100%;
+            max-width: 547px;
+            margin-top: 20px;
+        }
+
+        .right-section {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 350px;
+            margin-right: 153px;
+        }
+
+        .right-section h2 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .right-section p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .right-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name-section {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 8px;
+        }
+
+        .name-section input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            width: 10px;
+        }
+
+        .right-section form input,
+        .right-section form select {
+            padding: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .dob {
+            margin-bottom: 12px;
+        }
+
+        .dob-selects {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        .dob-selects select {
+            width: 32%;
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .dob-help {
+            font-size: 12px;
+            color: #777;
+            text-decoration: none;
+        }
+
+        .dob-help:hover {
+            text-decoration: underline;
+        }
+
+        .gender {
+            margin-bottom: 15px;
+        }
+
+        .gender input[type="radio"] {
+            margin-left: 5px;
+        }
+
+        .right-section form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .right-section form button:hover {
+            background-color: #45a049;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 360px;
+            text-align: center;
+            display: none;
+        }
+
+        .login-container img {
+            width: 351px;
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"], 
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .login-container .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-container .login-btn:hover {
+            background-color: #165cdb;
+        }
+
+        .login-container .forgot-password,
+        .login-container .create-account {
+            display: block;
+            margin: 15px 0;
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-container .create-account {
+            background-color: #42b72a;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 18px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .login-container .create-account:hover {
+            background-color: #36a420;
+        }
+        
+        @media screen and (max-width: 500px) {
+  body {
+    .login-container{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-left: 38%;
+    }
+    .web{
+        display: none;
+    }
+    body{
+        justify-content: center;
+            align-items: center;
+            text-align: center;
+    }
+
+  }
+}
+        
+    </style>
+</body>
+</html>
